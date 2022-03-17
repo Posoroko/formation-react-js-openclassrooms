@@ -1,0 +1,211 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(255, 0, 0, 0.233); */
+}
+.logo{
+    /* height: 60px; */
+    height: max(40px, 3.15vw);
+    margin: 3vw 3.8vw 0 3.8vw;
+}
+.navBox{
+    /* width: 24.15vw; */
+    display: flex;
+}
+.hebergement{
+    font-size: max(16px, 1.2vw);/*23px*/
+    padding: 3.3vw 1.5vw 3.15vw 1.9vw;
+    /* background-color: rgba(57, 57, 58, 0.267);    */
+}
+.hebergement:hover{
+    border-top: 3px solid var(--blue);
+    padding: calc(3.3vw - 3px) 1.5vw 3.15vw 1.9vw;
+}
+.activites{
+    font-size: max(16px, 1.2vw);/*23px*/
+    padding: 3.3vw 5.25vw 0px 3.15vw;
+}
+.activites:hover{
+    border-top: 3px solid var(--blue);
+    padding: calc(3.3vw - 3px) 2.5vw 0px 3.15vw;
+    margin-right: 2.75vw;
+}
+
+.topSection{
+    margin-left: 3.8vw;
+}
+.mainHgroup > h1 {
+    color: black;
+    font-size: max(18px, 1.53vw); /*29.4px*/
+}
+.mainHgroup > h3{
+    font-size: max(16px, 1.16vw);/*22.3px*/
+    font-weight: 100;
+    line-height: 2px;
+    
+}
+
+.searchBox{
+    height: max(48px, 3.54vw);/*68px*/
+    width: max(400px, 29.1vw);/*560px*/
+    border-radius: 20px;
+    margin-top: max(20px, 2.05vw);/*40px*/
+    background-color: var(--gray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--lightblue);
+}
+.searchBox > img{
+    height: 100%;
+    width: 68px;
+    background-color: var(--lightblue);
+    /* border-radius: 20px; */
+    padding: max(5px, 1vw);/*20px*/
+
+}
+.searchBox > input{
+    height: 100%;
+    width: 312px;
+    font-size: max(16px, 1.25vw);/*24px*/
+    font-weight: 700;
+    padding-left: 22px;
+    border: 0;
+    background-color: transparent;
+}
+.searchBox > input:active{
+    border: 0;
+}
+.searchBox > button{
+    width: 180px;
+    height: 100%;
+    color: white;
+    font-size: max(16px, 1.25vw);/*24px*/
+    font-weight: 700;
+    border: 0;
+    background-color: var(--strongblue);
+    /* background-color: transparent; */
+}
+
+
+
+
+.filterBox{
+    /* height: 67px; */
+    margin: max(20px, 2.1vw) 0 28px 0;/*margin-top: 40px*/
+    /* font-size: 21px; */
+    background-color: rgba(255, 0, 0, 0.301);
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filterBox > h3 {
+    /* height: 100%; */
+    font-size: max(16px, 1.25vw);
+    margin: 0 40px 20px 0;
+    background-color: rgba(255, 0, 0, 0.301);
+}
+.filterBox > button{
+    height: 67px;
+    font-size: max(16px, 1.30vw);/*25pw*/
+    letter-spacing: 0.5px;
+    /* background-color: rgba(255, 0, 0, 0.301); */
+    padding-right: 30px;
+    border: 2px solid var(--gray);
+    border-radius: 50px;
+    margin: 0px 34px 20px 0;
+    display: flex;
+    align-items: center;
+}
+.filterBox > button > img{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--lightblue);
+    padding: 15px;
+    margin-right: 17px;
+    border-radius: 50%;
+}
+
+
+.infoBox{
+    /* height: 125px; */
+    background-color: rgba(255, 0, 0, 0.301);
+    /* padding: 6px; */
+    display: flex;
+    align-items: center;
+}
+.infoBox > img{
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.infoBox > p{
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    margin-left: 16px;
+}
+
+
+
+
+
+.mainSection1{
+    width: 100%;
+    padding: 3px 3.5vw 0 3.5vw;
+    margin-top: 48px;
+    display: flex;
+}
+.HebergementBox{
+    /* padding: 55px 15px 55px 52px; */
+    max-width: 1173px;
+    padding: 55px 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.301);
+}
+.HebergementBox > h2 {
+    color: red;
+    font-size: 31px;
+    letter-spacing: 0.1px;
+    margin: 0 0 10px 42px;
+}
+.hotelCardBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.hotelCard{
+    height: 266px;
+    background-color: rgba(255, 0, 0, 0.301);
+   border-radius: 25px;
+    /* overflow: hidden; */
+    padding: 7px;
+    margin-bottom: 40px;
+}
+
+.hotelImgBox{
+    width: 315px;
+    height: 152px;
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+}
+.hotelImgBox > img{
+    width: 100%;
+}
+.hotelInfoBox {
+    padding: 15px;
+}
+.hotelInfoBox > p{
+    font-size: 19.5px;
+    margin-top: 6px;
+}
