@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    padding: 0 3.5vw;
     display: flex;
     justify-content: space-between;
     /* background-color: rgba(255, 0, 0, 0.233); */
@@ -7,7 +8,7 @@ header{
 .logo{
     /* height: 60px; */
     height: max(40px, 3.15vw);
-    margin: 3vw 3.8vw 0 3.8vw;
+    margin: 2.85vw 3.8vw 0 0.3vw;
 }
 .navBox{
     /* width: 24.15vw; */
@@ -15,42 +16,44 @@ header{
 }
 .hebergement{
     font-size: max(16px, 1.2vw);/*23px*/
-    padding: 3.3vw 1.5vw 3.15vw 1.9vw;
-    /* background-color: rgba(57, 57, 58, 0.267);    */
+    padding: 3.1vw 1.5vw 3.1vw 1.9vw;
+    border-top: 3px solid white;
 }
 .hebergement:hover{
     border-top: 3px solid var(--blue);
-    padding: calc(3.3vw - 3px) 1.5vw 3.15vw 1.9vw;
+    color: var(--blue);
 }
 .activites{
     font-size: max(16px, 1.2vw);/*23px*/
-    padding: 3.3vw 5.25vw 0px 3.15vw;
+    padding: 3.1vw 1.6vw 0px 3.15vw;
+    border-top: 3px solid white;
 }
 .activites:hover{
     border-top: 3px solid var(--blue);
-    padding: calc(3.3vw - 3px) 2.5vw 0px 3.15vw;
-    margin-right: 2.75vw;
+    color: var(--blue);
 }
-
-.topSection{
-    margin-left: 3.8vw;
+.mainHgroup{
+    margin-left: 4px;
 }
 .mainHgroup > h1 {
-    color: black;
     font-size: max(18px, 1.53vw); /*29.4px*/
+    letter-spacing: -0.1px;
 }
 .mainHgroup > h3{
     font-size: max(16px, 1.16vw);/*22.3px*/
     font-weight: 100;
-    line-height: 2px;
+    line-height: 3px;
     
 }
 
+.topSection{
+    padding: 0 3.5vw
+}
 .searchBox{
     height: max(48px, 3.54vw);/*68px*/
     width: max(400px, 29.1vw);/*560px*/
     border-radius: 20px;
-    margin-top: max(20px, 2.05vw);/*40px*/
+    margin-top: max(20px, 1.95vw);/*40px*/
     background-color: var(--gray);
     overflow: hidden;
     display: flex;
@@ -58,13 +61,14 @@ header{
     align-items: center;
     border: 1px solid var(--lightblue);
 }
-.searchBox > img{
+.searchBox > i{
     height: 100%;
     width: 68px;
+    font-size: 30px;
     background-color: var(--lightblue);
-    /* border-radius: 20px; */
-    padding: max(5px, 1vw);/*20px*/
-
+    /* padding: max(5px, 1vw);20px */
+    display: grid;
+    place-items: center;
 }
 .searchBox > input{
     height: 100%;
@@ -93,10 +97,7 @@ header{
 
 
 .filterBox{
-    /* height: 67px; */
     margin: max(20px, 2.1vw) 0 28px 0;/*margin-top: 40px*/
-    /* font-size: 21px; */
-    background-color: rgba(255, 0, 0, 0.301);
     padding: 0 10px;
     display: flex;
     flex-direction: row;
@@ -104,20 +105,17 @@ header{
     flex-wrap: wrap;
 }
 .filterBox > h3 {
-    /* height: 100%; */
     font-size: max(16px, 1.25vw);
-    margin: 0 40px 20px 0;
-    background-color: rgba(255, 0, 0, 0.301);
+    margin: 0 40px 20px 4px;
 }
 .filterBox > button{
     height: 67px;
     font-size: max(16px, 1.30vw);/*25pw*/
     letter-spacing: 0.5px;
-    /* background-color: rgba(255, 0, 0, 0.301); */
     padding-right: 30px;
     border: 2px solid var(--gray);
     border-radius: 50px;
-    margin: 0px 34px 20px 0;
+    margin: 0px 32px 20px 0;
     display: flex;
     align-items: center;
 }
@@ -132,11 +130,9 @@ header{
 
 
 .infoBox{
-    /* height: 125px; */
-    background-color: rgba(255, 0, 0, 0.301);
-    /* padding: 6px; */
     display: flex;
     align-items: center;
+    padding-left: 10px
 }
 .infoBox > img{
     height: 30px;
@@ -147,7 +143,7 @@ header{
 }
 .infoBox > p{
     font-size: 22px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
     margin-left: 16px;
 }
 
@@ -156,42 +152,46 @@ header{
 
 
 .mainSection1{
-    width: 100%;
-    padding: 3px 3.5vw 0 3.5vw;
-    margin-top: 48px;
+    max-width: 100%;
+    padding: 0 3.5vw;
+    margin-top: 50px;
     display: flex;
+    /* flex-wrap: wrap-reverse; */
 }
 .HebergementBox{
     /* padding: 55px 15px 55px 52px; */
-    max-width: 1173px;
-    padding: 55px 10px;
-    border-radius: 25px;
-    background-color: rgba(255, 0, 0, 0.301);
+    max-width: 60.5vw;/*1160px*/
+    padding: 52px 50px;
+    border-radius: 28px;
+    background-color: var(--gray);
+    display: inline-block;
+    align-self: flex-start;
 }
 .HebergementBox > h2 {
-    color: red;
-    font-size: 31px;
-    letter-spacing: 0.1px;
-    margin: 0 0 10px 42px;
+    font-size: max(24px, 1.60vw);/*31px*/
+    letter-spacing: -0.5px;
+    margin: 0 0 0px 0px;
 }
-.hotelCardBox{
-    width: 100%;
+.hotelCardBox1{
+    /* width: 100%; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 30px;
+    /* padding: 0 25px; */
+    margin-top: 26px;
+
 }
 
-.hotelCard{
+.hotelCard1{
     height: 266px;
-    background-color: rgba(255, 0, 0, 0.301);
+    background-color: rgb(255, 255, 255);
    border-radius: 25px;
     /* overflow: hidden; */
     padding: 7px;
-    margin-bottom: 40px;
+    margin: 0 0px 40px 0px;
 }
 
-.hotelImgBox{
+.hotelImgBox1{
     width: 315px;
     height: 152px;
     
@@ -199,13 +199,225 @@ header{
     border-top-right-radius: 25px;
     overflow: hidden;
 }
-.hotelImgBox > img{
+.hotelImgBox1 > img{
     width: 100%;
 }
-.hotelInfoBox {
+.hotelInfoBox1 {
     padding: 15px;
 }
-.hotelInfoBox > p{
+.hotelInfoBox1 > p{
     font-size: 19.5px;
     margin-top: 6px;
+}
+
+.HebergementBox > div > a{
+    font-size: 25.5px;
+    padding: 11px 0 0 7px;
+    margin-bottom: 5px;
+    display: grid;
+    align-items: center;
+}
+
+
+.populaireBox{
+    background-color: var(--gray);
+    margin-left: max(25px, 2.8vw);/*55px*/
+    padding: 55px 52px 0 47px;
+    border-radius: 25px;
+}
+.populaireBox > h2{
+    font-size: max(24px, 1.6vw);/*31px*/
+    letter-spacing: -1px;
+    margin-bottom: max(24px, 1.67vw);/*32px*/
+}
+
+.hotelCard2{
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 7px 0px 8px 7px;
+    margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
+    display: flex;
+}
+.hotelImgBox2{
+    width: 172px;
+    height: 176px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    overflow: hidden;
+}
+.hotelImgBox2 > img{
+    height: 100%;
+}
+.hotelInfoBox2 {
+    padding: 15px 63px 0 25px;
+
+}
+.hotelInfoBox2 > h3{
+    font-size: 21px;
+    letter-spacing: 0.3px;
+}
+.hotelInfoBox2 > p{
+    font-size: 19.5px;
+    margin-top: 10px;
+}
+
+
+.mainSection2{
+    width: 100%;
+    margin-top: 86px;
+    padding: 0 3.5vw;
+    /* background-color: rgba(255, 0, 0, 0.287); */
+    margin-bottom: 80px;
+}
+.mainSection2 > h2{
+    font-size: 27.5px;
+    letter-spacing: 0.75px;
+}
+.cardOuterBoxAct{
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+.bigCardBoxAct{
+    width: 400px;
+    height: 589px;
+    /* background-color: rgba(255, 255, 255, 0.308); */
+    border-radius: 25px;
+    overflow: hidden;
+}
+.bigCardBoxAct > .imgBoxAct{
+    height: 515px;
+}
+.bigCardBoxAct > .imgBoxAct > img{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.doubleCardBoxAct1{
+    width: 400px;
+    height: 589px;/*313*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doubleCardBoxAct1 > .smallCard1{
+    width: 100%;
+    height: 313px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.doubleCardBoxAct1 > .smallCard1 > .imgBoxAct{
+    width: 100%;
+    height: 240px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.doubleCardBoxAct1 > .smallCard1 > .imgBoxAct > img{
+    width: 100%;
+    transform: translateY(-24%);
+}
+.nomActivite{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 25px 0 0 25px;
+    letter-spacing: -0.5px;
+}
+.doubleCardBoxAct1 > .smallCard2{
+    width: 100%;
+    height: 220px;
+    /* background-color: rgba(255, 255, 255, 0.226); */
+    border-radius: 25px;
+    overflow: hidden;
+}
+.doubleCardBoxAct1 > .smallCard2 > .imgBoxAct{
+    width: 100%;
+    height: 145px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.doubleCardBoxAct1 > .smallCard2 > .imgBoxAct > img{
+    width: 100%;
+    transform: translateY(-10%);
+}
+
+.doubleCardBoxAct2{
+    width: 400px;
+    height: 589px;/*313*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.doubleCardBoxAct2 > .smallCard1{
+    width: 100%;
+    height: 260px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.doubleCardBoxAct2 > .smallCard1 > .imgBoxAct{
+    width: 100%;
+    height: 185px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+.doubleCardBoxAct2 > .smallCard1 > .imgBoxAct > img{
+    width: 100%;
+}
+.nomActivite{
+    font-size: 22px;
+    padding: 25px 0 0 25px;
+}
+.doubleCardBoxAct2 > .smallCard2{
+    width: 100%;
+    height: 278px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.doubleCardBoxAct2 > .smallCard2 > .imgBoxAct{
+    width: 100%;
+    height: 204px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.doubleCardBoxAct2 > .smallCard2 > .imgBoxAct > img{
+    width: 100%;
+    transform: translateY(-3%);
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 280px;
+    background-color: var(--gray);
+    padding: 0 3.5vw;
+}
+footer > nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 60px;
+}
+footer > nav > ul{
+    width: 33.33%;
+}
+.navTitle{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.navItem{
+    font-size: 22px;
+    margin-bottom: 15px;
 }
