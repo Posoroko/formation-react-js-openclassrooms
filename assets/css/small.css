@@ -189,7 +189,7 @@ header{
     font-size: 35px;
     letter-spacing: -0.5px;
     padding: 6px 0 0 5px;
-    margin-left: 16px;
+    margin: 0 0 72px 16px;
 
 }
 
@@ -208,8 +208,7 @@ header{
 .populaireBox{
     width: 100%;
     background-color: var(--gray);
-
-    padding: 151px 40px 0 40px;
+    padding: 78px 40px 0 40px;
 }
 .populaireBox > h2{
     font-size: max(24px, 5.8vw);/*31px*/
@@ -284,8 +283,7 @@ header{
 
 .hotelCard1{
     width: 100%;
-    /* background-color: rgba(255, 255, 255); */
-    background-color: rgba(255, 0, 0, 0.137);
+    background-color: rgba(255, 255, 255);
     border-radius: 43px;
     /* overflow: hidden; */
     padding: 11px;
@@ -338,7 +336,25 @@ header{
 .grayStar{
     color: var(--darkgray);
 }
-
+/*ajustement des photos*/
+.hebergement1{
+    transform: translateY(-24.5%);
+}
+.hebergement2{
+    transform: translateY(-24.5%);
+}
+.hebergement3{
+    transform: translateY(-24.5%);
+}
+.hebergement4{
+    transform: translateY(-31%);
+}
+.hebergement5{
+    transform: translateY(-18%);
+}
+.hebergement6{
+    transform: translateY(-38%);
+}
 /*----- main section 2 -----*/
 
 .mainSection2{
@@ -399,14 +415,33 @@ header{
 .bigCardBoxAct, .smallCard1, .smallCard2{
     margin-bottom: 48px;
 }
+/* ajustement des images */
+.activite1{
+    transform: translateY(-8%);
+}
+.activite2{
+    transform: translateY(-30%);
+}
+.activite3{
+    transform: translateY(-6%);
+}
+.activite4{
+    transform: translateY(-7%);
+}
+.activite5{
+    transform: translateY(-7%);
+}
+.activite6{
+    transform: translateY(-12%);
+}
 
 
 /*----- footer -----*/
 
 footer{
     width: 100%;
-    /* background-color: var(--gray); */
-    background-color: rgba(255, 0, 0, 0.253);
+    background-color: var(--gray);
+    /* background-color: rgba(255, 0, 0, 0.253); */
     margin: 45px 0 0 0;
     padding: 91px 7.7vw;
 }
