@@ -10,8 +10,8 @@ header{
     height: max(40px, 3.15vw);
     margin: 2.85vw 3.8vw 0 0.3vw;
 }
-.navBox{
-    /* width: 24.15vw; */
+.navBox > ul{
+        /* background-color: rgba(255, 0, 0, 0.233); */
     display: flex;
 }
 .hebergement{
@@ -21,6 +21,7 @@ header{
 }
 .hebergement:hover{
     border-top: 3px solid var(--blue);
+    padding: 3.1vw 1.5vw 3.1vw 1.9vw;
     color: var(--blue);
 }
 .activites{
@@ -30,6 +31,7 @@ header{
 }
 .activites:hover{
     border-top: 3px solid var(--blue);
+    padding: 3.1vw 1.6vw 0px 3.15vw;
     color: var(--blue);
 }
 .mainHgroup{
@@ -39,11 +41,10 @@ header{
     font-size: max(18px, 1.53vw); /*29.4px*/
     letter-spacing: -0.1px;
 }
-.mainHgroup > h3{
+.mainHgroup > p{
     font-size: max(16px, 1.16vw);/*22.3px*/
     font-weight: 100;
-    line-height: 3px;
-    
+    line-height: 3px; 
 }
 
 .topSection{
@@ -59,7 +60,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid var(--lightblue);
+    
 }
 .searchBox > i{
     height: 100%;
@@ -67,6 +68,7 @@ header{
     font-size: 30px;
     background-color: var(--lightblue);
     /* padding: max(5px, 1vw);20px */
+    border: 1px solid var(--lightblue);
     display: grid;
     place-items: center;
 }
@@ -76,8 +78,8 @@ header{
     font-size: max(16px, 1.25vw);/*24px*/
     font-weight: 700;
     padding-left: 22px;
-    border: 0;
-    background-color: transparent;
+    border: 1px solid var(--gray);
+    background-color: white;
 }
 .searchBox > input:active{
     border: 0;
@@ -88,9 +90,9 @@ header{
     color: white;
     font-size: max(16px, 1.25vw);/*24px*/
     font-weight: 700;
-    border: 0;
+    border: 1px solid var(--strongblue);
     background-color: var(--strongblue);
-    /* background-color: transparent; */
+    
 }
 
 
@@ -119,13 +121,15 @@ header{
     display: flex;
     align-items: center;
 }
-.filterBox > button > img{
+.filterBox > button > i{
     height: 100%;
     aspect-ratio: 1/1;
     background-color: var(--lightblue);
     padding: 15px;
     margin-right: 17px;
     border-radius: 50%;
+    display: grid;
+    place-items: center;
 }
 
 

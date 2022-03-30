@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/small.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="assets/css/medium.css" media="screen and (max-width: 991px)">
+    <link rel="stylesheet" href="assets/css/medium.css" media="screen and (min-width: 968px) and (max-width: 991px)">
     <link rel="stylesheet" href="assets/css/large.css" media="screen and (min-width: 992px)">
     <script src="https://kit.fontawesome.com/218c86a2c1.js" crossorigin="anonymous" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +21,10 @@
         <img src="assets/images/logo/Booki@3x.png" alt="logo Booki" class="logo pointer">
 
         <nav class="navBox">
-            <div class="navBtn hebergement pointer">Hébergements</div>
-            <div class="navBtn activites pointer">Activités</div>
+            <ul>
+                <li class="navBtn hebergement pointer">Hébergements</li>
+                <li class="navBtn activites pointer">Activités</li>
+            </ul>
         </nav>
     </header>
     
@@ -30,35 +32,38 @@
     <section class="topSection">
         <hgroup class="mainHgroup">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h3>En plein centre ville ou en pleine nature</h3>
+            <p>En plein centre ville ou en pleine nature</p>
         </hgroup>
         <form class="searchBox " >
             <i class="fas fa-map-marker-alt search__map-marker" aria-hidden="true"></i>
             <input type="text" placeholder="Marseille, France">
-            <button>Rechercher</button>
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Rechercher</p>
+            </button>
         </form>
         
         <div class="filterBox">
             <h3 class="">Filtres</h3>
             <button class="filter">
-                <img src="assets/images/icons/money-bill-wave-solid.svg" alt="" class="filterIcon">
+                <i class="fa-solid fa-money-bill-wave"></i>
                 Economique
             </button>
             <button class="filter">
-                <img src="assets/images/icons/child-solid.svg" alt="" class="filterIcon">
+                <i class="fa-solid fa-child-reaching"></i>
                 Familial
             </button>
             <button class="filter">
-                <img src="assets/images/icons/heart-solid.svg" alt="" class="filterIcon">
+                <i class="fa-solid fa-heart"></i>
                 Romantique
             </button>
             <button class="filter">
-                <img src="assets/images/icons/dog-solid.svg" alt="" class="filterIcon">
+                <i class="fa-solid fa-dog"></i>
                 Animaux autorisés
             </button>
         </div>
         <div class="infoBox">
-            <img src="assets/images/icons/info-solid.svg" alt="">
+            <i class="fa-solid fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cetteville</p>
         </div>
     
@@ -77,50 +82,92 @@
                         <h3>Auberge La Cannebière</h3>
                         <p>Nuit à partir de <span>25€</span></p>
                     </div>
-                </div>
-                <div class="hotelCard1">
-                    <div class="hotelImgBox1">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                    </div>
-                    <div class="hotelInfoBox1">
-                        <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de <span>25€</span></p>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star grayStar"></i>
                     </div>
                 </div>
                 <div class="hotelCard1">
                     <div class="hotelImgBox1">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox1">
-                        <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de <span>25€</span></p>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de <span>52€</span></p>
+                    </div>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
                     </div>
                 </div>
                 <div class="hotelCard1">
                     <div class="hotelImgBox1">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox1">
-                        <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de <span>25€</span></p>
+                        <h3>Hôtel Les Mouettes</h3>
+                        <p>Nuit à partir de <span>76€</span></p>
+                    </div>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star grayStar"></i>
                     </div>
                 </div>
                 <div class="hotelCard1">
                     <div class="hotelImgBox1">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox1">
-                        <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de <span>25€</span></p>
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de <span>46€</span></p>
+                    </div>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star grayStar"></i>
                     </div>
                 </div>
                 <div class="hotelCard1">
                     <div class="hotelImgBox1">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox1">
-                        <h3>Auberge La Cannebière</h3>
-                        <p>Nuit à partir de <span>25€</span></p>
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de <span>23€</span></p>
+                    </div>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star grayStar"></i>
+                    </div>
+                </div>
+                <div class="hotelCard1">
+                    <div class="hotelImgBox1">
+                        <img src="assets\images\hebergements\4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hotelInfoBox1">
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de <span>96€</span></p>
+                    </div>
+                    <div class="starBox">
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star blueStar"></i>
+                        <i class="fa-solid fa-star grayStar"></i>
                     </div>
                 </div>
             </div>
@@ -134,7 +181,7 @@
 
                 <div class="hotelCard2">
                     <div class="hotelImgBox2">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox2">
                         <h3>Hôtel Le soleil du <br> matin</h3>
@@ -143,7 +190,7 @@
                 </div>
                 <div class="hotelCard2">
                     <div class="hotelImgBox2">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                     </div>
                     <div class="hotelInfoBox2">
                         <h3>Au coeur de l'eau <br> Chambres d'hôtes</h3>
@@ -152,7 +199,7 @@
                 </div>
                 <div class="hotelCard2">
                     <div class="hotelImgBox2">
-                        <img src="assets\images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="assets\images\hebergements\4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="toutBleu" alt="">
                     </div>
                     <div class="hotelInfoBox2">
                         <h3>Hôtel Tout bleu et <br> Blanc</h3>
@@ -217,18 +264,18 @@
     <footer>
         <nav>
             <ul>
-                <li class="navTitle">A propos</li>
+                <li class="navTitle navTitle1">A propos</li>
                 <li class="navItem">Fonctionnement du site</li>
-                <li class="navItem">Conditions générales de ventes</li>
+                <li class="navItem">Conditions générales de vente</li>
                 <li class="navItem">Données et cpnfidentialité</li>
             </ul>
             <ul>
-                <li class="navTitle">Nos hébergements</li>
+                <li class="navTitle navTitle2">Nos hébergements</li>
                 <li class="navItem">Charte qualité</li>
                 <li class="navItem">Soumettre votre hôtel</li>
             </ul>
             <ul>
-                <li class="navTitle">Assistance</li>
+                <li class="navTitle navTitle3">Assistance</li>
                 <li class="navItem">Centre d'aide</li>
                 <li class="navItem">Nous contacter</li>
             </ul>
