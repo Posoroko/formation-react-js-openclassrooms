@@ -218,12 +218,12 @@ header{
 
 .hotelCard2{
     width: 100%;
-    /* background-color: rgb(255, 255, 255); */
-
+    background-color: rgb(255, 255, 255);
     border-radius: 40px;
     padding: 11px;
     margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
     display: flex;
+    box-shadow: var(--shadow);
 }
 .hotelImgBox2{
     width: 34.3vw;
@@ -288,6 +288,7 @@ header{
     /* overflow: hidden; */
     padding: 11px;
     margin: 0px 0px 26px 0px;
+    box-shadow: var(--shadow);
 }
 
 .hotelImgBox1{
@@ -401,6 +402,11 @@ header{
     width: 100%;
     display: grid;
     place-items: center;
+}
+.bigCardBoxAct, 
+.smallCard1, 
+.smallCard2 {
+    box-shadow: var(--shadow);    
 }
 .nomActivite{
     font-size: 35px;

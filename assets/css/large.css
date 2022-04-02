@@ -16,14 +16,17 @@ header{
 }
 .hebergement{
     font-size: max(16px, 1.2vw);/*23px*/
+    font-weight: 200;
+    color: var(--blue);
     padding: 3.1vw 1.5vw 3.1vw 1.9vw;
-    border-top: 3px solid white;
+    /* border-top: 3px solid white; */
+    border-top: 3px solid var(--blue);
 }
-.hebergement:hover{
+/* .hebergement:hover{
     border-top: 3px solid var(--blue);
     padding: 3.1vw 1.5vw 3.1vw 1.9vw;
     color: var(--blue);
-}
+} */
 .activites{
     font-size: max(16px, 1.2vw);/*23px*/
     padding: 3.1vw 1.6vw 0px 3.15vw;
@@ -65,8 +68,8 @@ header{
 .searchBox > i{
     height: 100%;
     width: 68px;
-    font-size: 30px;
-    background-color: var(--lightblue);
+    font-size: 22px;
+    background-color: var(--gray);
     /* padding: max(5px, 1vw);20px */
     border: 1px solid var(--lightblue);
     display: grid;
@@ -92,9 +95,10 @@ header{
     font-weight: 700;
     border: 1px solid var(--strongblue);
     background-color: var(--strongblue);
-    
 }
-
+.fa-magnifying-glass{
+    display: none;
+}
 
 
 
@@ -113,23 +117,27 @@ header{
 .filterBox > button{
     height: 67px;
     font-size: max(16px, 1.30vw);/*25pw*/
+    font-weight: 700;
     letter-spacing: 0.5px;
     padding-right: 30px;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--darkgray);
     border-radius: 50px;
     margin: 0px 32px 20px 0;
     display: flex;
     align-items: center;
 }
 .filterBox > button > i{
-    height: 100%;
+    height: 67px;
     aspect-ratio: 1/1;
+    color: var(--blue);
     background-color: var(--lightblue);
     padding: 15px;
     margin-right: 17px;
+    border: 2px solid var(--lightblue);
     border-radius: 50%;
     display: grid;
     place-items: center;
+    transform:translateX(-2px)
 }
 
 
@@ -147,8 +155,10 @@ header{
 }
 .infoBox > p{
     font-size: 22px;
+    font-weight: 200;
     letter-spacing: 0.2px;
     margin-left: 16px;
+    /* color: var(--darkgray); */
 }
 
 
@@ -189,22 +199,23 @@ header{
 .hotelCard1{
     height: 266px;
     background-color: rgb(255, 255, 255);
-   border-radius: 25px;
+   border-radius: var(--outerRadius25);
     /* overflow: hidden; */
     padding: 7px;
     margin: 0 0px 40px 0px;
+    box-shadow: var(--shadow);
 }
 
 .hotelImgBox1{
     width: 315px;
     height: 152px;
-    
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: var(--innerRadius20);
+    border-top-right-radius: var(--innerRadius20);
     overflow: hidden;
 }
 .hotelImgBox1 > img{
-    width: 100%;
+    /* width: 100%; */
+    object-fit: cover;
 }
 .hotelInfoBox1 {
     padding: 15px;
@@ -221,6 +232,19 @@ header{
     display: grid;
     align-items: center;
 }
+.starBox{
+    padding-left: 15px;
+}
+.fa-star{
+    margin-right: -3px;
+}
+.blueStar{
+    color: var(--blue);
+}
+.grayStar{
+    color: var(--darkgray);
+}
+
 
 
 .populaireBox{
@@ -229,28 +253,37 @@ header{
     padding: 55px 52px 0 47px;
     border-radius: 25px;
 }
-.populaireBox > h2{
+.populaireBox > hgroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.populaireBox > hgroup > h2{
     font-size: max(24px, 1.6vw);/*31px*/
     letter-spacing: -1px;
     margin-bottom: max(24px, 1.67vw);/*32px*/
 }
-
+.fa-chart-line{
+    font-size: 25px;
+}
 .hotelCard2{
     background-color: rgb(255, 255, 255);
-    border-radius: 25px;
+    border-radius: var(--outerRadius25);
     padding: 7px 0px 8px 7px;
     margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
     display: flex;
+    box-shadow: var(--shadow);
 }
 .hotelImgBox2{
     width: 172px;
     height: 176px;
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
+    border-top-left-radius: var(--innerRadius20);
+    border-bottom-left-radius: var(--innerRadius20);
     overflow: hidden;
 }
 .hotelImgBox2 > img{
-    height: 100%;
+    /* object-fit: contain; */
+
 }
 .hotelInfoBox2 {
     padding: 15px 63px 0 25px;
@@ -290,13 +323,14 @@ header{
 
 .bigCardBoxAct{
     width: 400px;
-    height: 589px;
+    height: 592px;
     /* background-color: rgba(255, 255, 255, 0.308); */
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .bigCardBoxAct > .imgBoxAct{
-    height: 515px;
+    height: 520px;
 }
 .bigCardBoxAct > .imgBoxAct > img{
     height: 100%;
@@ -309,16 +343,18 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: var(--shadow);
 }
 .doubleCardBoxAct1 > .smallCard1{
     width: 100%;
-    height: 313px;
+    height: 315px;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .doubleCardBoxAct1 > .smallCard1 > .imgBoxAct{
     width: 100%;
-    height: 240px;
+    height: 245px;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -330,19 +366,19 @@ header{
 .nomActivite{
     font-size: 22px;
     font-weight: 700;
-    padding: 25px 0 0 25px;
+    padding: 20px 0 0 25px;
     letter-spacing: -0.5px;
 }
 .doubleCardBoxAct1 > .smallCard2{
     width: 100%;
     height: 220px;
-    /* background-color: rgba(255, 255, 255, 0.226); */
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .doubleCardBoxAct1 > .smallCard2 > .imgBoxAct{
     width: 100%;
-    height: 145px;
+    height: 150px;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -364,14 +400,14 @@ header{
     height: 260px;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .doubleCardBoxAct2 > .smallCard1 > .imgBoxAct{
     width: 100%;
-    height: 185px;
+    height: 190px;
     display: grid;
     place-items: center;
     overflow: hidden;
-
 }
 .doubleCardBoxAct2 > .smallCard1 > .imgBoxAct > img{
     width: 100%;
@@ -385,10 +421,11 @@ header{
     height: 278px;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .doubleCardBoxAct2 > .smallCard2 > .imgBoxAct{
     width: 100%;
-    height: 204px;
+    height: 210px;
     display: grid;
     place-items: center;
     overflow: hidden;
