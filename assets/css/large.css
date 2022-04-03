@@ -79,7 +79,6 @@ header > nav > ul > li{
     width: 68px;
     font-size: 22px;
     background-color: var(--gray);
-    /* padding: max(5px, 1vw);20px */
     border: 1px solid var(--lightblue);
     display: grid;
     place-items: center;
@@ -300,13 +299,12 @@ header > nav > ul > li{
     font-size: 25px;
 }
 .hotelCard2{
-    
     background-color: rgb(255, 255, 255);
     border-radius: var(--outerRadius25);
     margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
-    
     box-shadow: var(--shadow);
 }
+
 .hotelCard2 > a {
     height: 100%;
     width: 100%;
