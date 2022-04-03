@@ -103,6 +103,7 @@ header > nav > ul > li{
     font-weight: 700;
     border: 1px solid var(--strongblue);
     background-color: var(--strongblue);
+    cursor: pointer;
 }
 .fa-magnifying-glass{
     display: none;

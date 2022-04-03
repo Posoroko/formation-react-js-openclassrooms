@@ -102,8 +102,7 @@ header > nav > ul > li{
     font-size: max(16px, 1.25vw);/*24px*/
     font-weight: 700;
     border: 0;
-    /* background-color: transparent; */
-    
+    cursor: pointer;    
 }
 .searchBox > button > p {
     display: none;
@@ -156,6 +155,7 @@ header > nav > ul > li{
     display: grid;
     place-items: center;
     transition: all 500ms ease;
+    cursor: pointer;
 }
 
 /*----- filter hover transition -----*/
@@ -250,8 +250,9 @@ header > nav > ul > li{
 
 }
 .hotelImgBox2 > img{
+    width: 100%;
     height: 100%;
-    /* transform: translateX(-18%); */
+    object-fit: cover;
 }
 .hotelImgBox2 > .toutBleu{
     width: 100%;
@@ -320,6 +321,8 @@ header > nav > ul > li{
 }
 .hotelImgBox1 > img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .hotelInfoBox1 {
     padding: 0 0 0 23px ;
@@ -416,10 +419,10 @@ header > nav > ul > li{
     height: 274px;
     overflow: hidden;
 }
-.bigCardBoxAct > a > .imgBoxAct > img,
-.smallCard1 > a > .imgBoxAct > img,
-.smallCard2 > a > .imgBoxAct > img{
+.actImg{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .bigCardBoxAct, 
 .smallCard1, 
