@@ -255,7 +255,7 @@ header > nav > ul > li{
 }
 .hotelImgBox2{
     width: 34.3vw;
-    height: max(100px, 35.6vw);/*275*/
+    height: max(200px, 35.6vw);/*275*/
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     overflow: hidden;
@@ -413,7 +413,6 @@ header > nav > ul > li{
     overflow: hidden;
 }
 .actImg{
-
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -426,7 +425,7 @@ header > nav > ul > li{
 .nomActivite{
     font-size: max(16px, 4.4vw);/*35px*/
     font-weight: 700;
-    padding: max(16px, 4.6vw) 0 35px max(16px, 4.6vw);/*40px*/
+    padding: max(16px, 4.6vw) 0  max(12px, 4.6vw) 35px;/*40px*/
     letter-spacing: -1.5px;
 }
 .doubleCardBoxAct1,
@@ -436,26 +435,7 @@ header > nav > ul > li{
 .bigCardBoxAct, .smallCard1, .smallCard2{
     margin-bottom: 48px;
 }
-/* ajustement des images */
 
-/* .activite1{
-    transform: translateY(-8%);
-}
-.activite2{
-    transform: translateY(-30%);
-}
-.activite3{
-    transform: translateY(-6%);
-}
-.activite4{
-    transform: translateY(-7%);
-}
-.activite5{
-    transform: translateY(-7%);
-}
-.activite6{
-    transform: translateY(-12%);
-} */
 
 
 /*----- footer -----*/
