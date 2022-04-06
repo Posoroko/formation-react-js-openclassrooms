@@ -208,6 +208,7 @@ header > nav > ul > li{
     background-color: var(--gray);
     display: inline-block;
     align-self: flex-start;
+    justify-self: flex-start;
 }
 .HebergementBox > h2 {
     font-size: max(24px, 1.60vw);/*31px*/
@@ -247,7 +248,8 @@ header > nav > ul > li{
     overflow: hidden;
 }
 .hotelImgBox1 > img{
-    /* width: 100%; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .hotelInfoBox1 {
