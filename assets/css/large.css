@@ -16,35 +16,30 @@ header > nav > ul{
 header > nav > ul > li{
     display: flex;
 }
+.navBtn{
+    font-size: max(20px, 1.2vw);/*23px*/
+    font-weight: 300;
+    border-top: 3px solid white;
+}
+.navBtn:hover, .navBtn:visited:hover{
+    color: var(--blue);
+    border-top: 3px solid var(--blue);
+}
+
 .navBtn:visited{
     color: black
 }
-/* .hebergement:visited{
-    color:blue;
-} */
 .hebergement{
-    font-size: max(16px, 1.2vw);/*23px*/
-    font-weight: 200;
-    color: var(--blue);
     padding: 3.1vw 1.5vw 3.1vw 1.9vw;
-    border-top: 3px solid white;
-    /* border-top: 3px solid var(--blue); */
 }
 .hebergement:hover{
-    border-top: 3px solid var(--blue);
     padding: 3.1vw 1.5vw 3.1vw 1.9vw;
-    color: var(--blue);
 }
 .activites{
-    font-size: max(16px, 1.2vw);/*23px*/
-    font-weight: 200;
     padding: 3.1vw 1.6vw 0px 3.15vw;
-    border-top: 3px solid white;
 }
 .activites:hover{
-    border-top: 3px solid var(--blue);
     padding: 3.1vw 1.6vw 0px 3.15vw;
-    color: var(--blue);
 }
 .mainHgroup{
     margin-left: 4px;
@@ -186,7 +181,6 @@ header > nav > ul > li{
     font-weight: 200;
     letter-spacing: 0.2px;
     margin-left: 16px;
-    /* color: var(--darkgray); */
 }
 
 
@@ -198,17 +192,13 @@ header > nav > ul > li{
     padding: 0 3.5vw;
     margin-top: 50px;
     display: flex;
-    /* flex-wrap: wrap-reverse; */
 }
 .HebergementBox{
-    /* padding: 55px 15px 55px 52px; */
     max-width: 60.5vw;/*1160px*/
-    padding: 52px 50px;
+    padding: 52px 40px;
     border-radius: 28px;
     background-color: var(--gray);
     display: inline-block;
-    align-self: flex-start;
-    justify-self: flex-start;
 }
 .HebergementBox > h2 {
     font-size: max(24px, 1.60vw);/*31px*/
@@ -216,11 +206,10 @@ header > nav > ul > li{
     margin: 0 0 0px 0px;
 }
 .hotelCardBox1{
-    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    /* padding: 0 25px; */
+
     margin-top: 26px;
 }
 
@@ -230,7 +219,7 @@ header > nav > ul > li{
     width: 329px;
     background-color: rgb(255, 255, 255);
     border-radius: var(--outerRadius25);
-    margin: 0 0px 40px 0px;
+    margin: 0 10px 40px 10px;
     box-shadow: var(--shadow);
 
 }
@@ -353,7 +342,7 @@ header > nav > ul > li{
     width: 100%;
     margin-top: 28px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -382,7 +371,9 @@ header > nav > ul > li{
     place-items: center;
 }
 
-
+.bigCardBoxAct, .doubleCardBoxAct1, .doubleCardBoxAct2{
+    margin: 10px;
+}
 
 .doubleCardBoxAct1{
     width: 400px;
