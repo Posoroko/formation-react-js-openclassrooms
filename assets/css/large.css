@@ -100,7 +100,7 @@ header > nav > ul > li{
     background-color: var(--strongblue);
     cursor: pointer;
 }
-.fa-magnifying-glass{
+.searchBox > button > i{
     display: none;
 }
 

@@ -46,12 +46,12 @@ header > nav > ul > li{
     margin: 0 5.5vw
 }
 .mainHgroup > h1 {
-    font-size: max(18px, 5.85vw); /*29.4px*/
+    font-size: max(18px, 4vw); /*29.4px*/
     letter-spacing: -0.3px;
     padding-top: 37px;
 }
 .mainHgroup > p{
-    font-size: max(16px, 4vw);/*22.3px*/
+    font-size: max(16px, 3vw);/*22.3px*/
     letter-spacing: 1px;
     /* line-height: 3px;  */
 }
@@ -212,7 +212,7 @@ header > nav > ul > li{
     align-items: baseline;
 }
 .populaireBox > hgroup > h2{
-    font-size: max(24px, 5.8vw);/*31px*/
+    font-size: max(24px, 4vw);/*31px*/
     letter-spacing: 0.2px;
     margin-bottom: 6.9vw;
 }
@@ -276,7 +276,7 @@ header > nav > ul > li{
     align-self: flex-start;
 }
 .HebergementBox > h2 {
-    font-size: max(24px, 5.6vw);/*31px*/
+    font-size: max(24px, 4vw);/*31px*/
     letter-spacing: 1.5px;
     padding-left: 3px;
     margin: 0 0 0px 0px;
