@@ -274,8 +274,9 @@ header > nav > ul > li{
 .populaireBox{
     background-color: var(--gray);
     margin-left: max(25px, 2.8vw);/*55px*/
-    padding: 55px 52px 0 47px;
+    padding: 55px 52px 30px 47px;
     border-radius: 25px;
+    align-self: flex-start;
 }
 .populaireBox > hgroup{
     display: flex;
