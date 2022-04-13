@@ -2,7 +2,7 @@
 break points: 768px, 992px
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
 .red{
     border: 1px solid red;
@@ -84,4 +84,7 @@ a, a:visited, a:active{
 }
 ul{
     list-style: none;
+}
+strong{
+    font-weight: 600;
 }

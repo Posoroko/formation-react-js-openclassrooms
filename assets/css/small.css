@@ -136,7 +136,7 @@ input:focus{
     margin: 0 40px 28px 2px;
 }
 .filterBox > button{
-    height: 102px;
+    height: max(60px, 13.5vw);
     font-size: max(16px, 4.2vw);/*25pw*/
     font-weight: 700;
     padding-right: max(10px, 4.4vw);/*36px*/
@@ -148,9 +148,9 @@ input:focus{
     cursor: pointer;
 }
 .filterBox > button > i{
-    height: 102px;
+    height: max(60px, 13.5vw);
     aspect-ratio: 1/1;
-    font-size: 30px;
+    font-size: max(20px, 5vw);
     color: var(--blue);
     background-color: var(--lightblue);
     padding: 15px;
