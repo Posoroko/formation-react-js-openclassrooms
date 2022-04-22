@@ -45,11 +45,11 @@ header > nav > ul > li{
     margin-left: 4px;
 }
 .mainHgroup > h1 {
-    font-size: max(18px, 1.53vw); /*29.4px*/
+    font-size: max(25px, 1.53vw); /*29.4px*/
     letter-spacing: -0.1px;
 }
 .mainHgroup > p{
-    font-size: max(16px, 1.16vw);/*22.3px*/
+    font-size: max(20px, 1.16vw);/*22.3px*/
     font-weight: 100;
     line-height: 3px; 
 }
@@ -59,12 +59,12 @@ header > nav > ul > li{
 }
 .searchBox{
     height: max(48px, 3.54vw);/*68px*/
-    width: max(400px, 29.1vw);/*560px*/
+    /* width: max(400px, 29.1vw);560px */
     border-radius: 20px;
-    margin-top: max(20px, 1.95vw);/*40px*/
+    margin-top: max(40px, 1.95vw);
     background-color: var(--gray);
     overflow: hidden;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     
@@ -81,7 +81,7 @@ header > nav > ul > li{
 .searchBox > input{
     height: 100%;
     width: 312px;
-    font-size: max(16px, 1.25vw);/*24px*/
+    font-size: max(20px, 1.25vw);/*24px*/
     font-weight: 700;
     padding-left: 22px;
     border: 1px solid var(--gray);
@@ -94,7 +94,7 @@ header > nav > ul > li{
     width: 180px;
     height: 100%;
     color: white;
-    font-size: max(16px, 1.25vw);/*24px*/
+    font-size: max(20px, 1.25vw);/*24px*/
     font-weight: 700;
     border: 1px solid var(--strongblue);
     background-color: var(--strongblue);
@@ -107,7 +107,7 @@ header > nav > ul > li{
 
 
 .filterBox{
-    margin: max(20px, 2.1vw) 0 28px 0;/*margin-top: 40px*/
+    margin: max(40px, 2.1vw) 0 28px 0;/*margin-top: 40px*/
     padding: 0 10px;
     display: flex;
     flex-direction: row;
@@ -182,11 +182,6 @@ header > nav > ul > li{
     letter-spacing: 0.2px;
     margin-left: 16px;
 }
-
-
-
-
-
 .mainSection1{
     max-width: 100%;
     padding: 0 3.5vw;
