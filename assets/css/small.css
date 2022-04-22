@@ -204,7 +204,7 @@ input:focus{
 
 .mainSection1{
     max-width: 100%;
-    padding: 0 0px 52px 0px;
+    padding: 0 0 52px 0;
     display: flex;
     flex-wrap: wrap-reverse;
 }
@@ -214,57 +214,57 @@ input:focus{
 .populaireBox{
     width: 100%;
     background-color: var(--gray);
-    padding: 78px 40px 0 40px;
+    padding: 30px 3vw 0 3vw;
 }
-.populaireBox > hgroup{
+.populaireBox > .popTitleBox{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-.populaireBox > hgroup > h2{
+.populaireBox > .popTitleBox > h2{
     font-size: max(24px, 5.8vw);/*31px*/
     letter-spacing: 0.2px;
     margin-bottom: 6.9vw;
 }
 .fa-chart-line{
-    font-size: 43px;
+    font-size: max(20px, 4.4vw);
 }
 .hotelCard2{
     width: 100%;
+    height: 275px;/*275 */
     background-color: rgb(255, 255, 255);
-    border-radius: 40px;
+    padding: max(5px, 1.5vw);
+    border-radius: max(20px, 5vw);
     margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
-    display: flex;
     box-shadow: var(--shadow);
-}
-.hotelCard2 > a {
-    height: 100%;
-    width: 100%;
     display: block;
-    padding: 11px;
-    display: flex;
 }
-.hotelImgBox2{
-    width: 34.3vw;
-    height: max(200px, 30vw);/*275*/
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    overflow: hidden;
 
-}
-.hotelImgBox2 > img{
+.hotelImgBox2{
     width: 100%;
+    height: 100%;
+    border-radius: max(18px, 4vw);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.hotelImgBox2 > img{
+    width: 40%;
     height: 100%;
     object-fit: cover;
 }
-.hotelImgBox2 > .toutBleu{
-    width: 100%;
-}
+
 .hotelInfoBox2 {
-    padding: 20px 63px 0 36px;
+    height: 100%;
+    width: 60%;
+    background-color: #fff;
+    padding: 20px 0px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: absolute;
+    right: 0;
 }
 
 .hotelInfoBox2 > div > h3{
@@ -281,82 +281,70 @@ input:focus{
 /*----- hébergement -----*/
 
 .HebergementBox{
-    /* padding: 55px 15px 55px 52px; */
     width: 100%;
-    
-    padding: 0px 40px;
-    margin-top: 130px;
-    display: inline-block;
-    align-self: flex-start;
+    padding: 0px 3vw;
+    margin-top: max(50px, 15vw);
 }
 .HebergementBox > h2 {
     font-size: max(24px, 5.6vw);/*31px*/
     letter-spacing: 1.5px;
-    padding-left: 3px;
-    margin: 0 0 0px 0px;
 }
 .hotelCardBox1{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding: 0 25px; */
     margin-top: 41px;
-
 }
 
 .hotelCard1{
     width: 100%;
+    height: 300px;
+    padding: 7px;
     background-color: rgba(255, 255, 255);
-    border-radius: 43px;
+    border-radius: max(20px, 5vw);
     margin: 0px 0px 26px 0px;
     box-shadow: var(--shadow);
 }
-.hotelCard1 > a{
-    height: 100%;
-    width: 100%;
-    display: block;
-    padding: 11px;
-}
+
 .hotelImgBox1{
     width: 100%;
-    height: max(150px, 25vw);/*231px*/
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+    height: 100%;
+    border-top-left-radius: max(18px, 4vw);
+    border-top-right-radius: max(18px, 4vw);
     overflow: hidden;
+    position: relative;
 }
 .hotelImgBox1 > img{
     width: 100%;
-    height: 100%;
+    height: 60%;
     object-fit: cover;
 }
 .hotelInfoBox1 {
-    padding: 0 0 0 23px ;
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    padding: 15px 21px;
+    position: absolute;
+    bottom: 0;
 }
 .hotelInfoBox1 > h3{
-    font-size: max(20px, 4.2vw);/*32px*/
+    font-size: max(18px, 3vw);/*32px*/
     font-weight: 700;
-    padding-top: max(10px, 2.2vw);/*20px*/
     letter-spacing: -0.3px;
 }
 .hotelInfoBox1 > p{
-    font-size: max(16px, 3.5vw);/*28px*/
-    margin-top: 12px;
+    font-size: max(16px, 2.5vw);/*28px*/
+    margin-top: 8px;
     letter-spacing: 0.7px;
 }
 
-.showMore{
-    font-size: max(16px, 4.6vw);/*38px*/
-    padding: 37px 0 0 2px;
-    margin-bottom: 5px;
-    display: grid;
-    align-items: center;
-}
 .starBox{
-    margin: 15px 0 11px 19px;
+    display: block;
+    padding: 11px 0 11px 0;
 }
 .fa-star{
-    font-size: max(16px, 3.5vw);
+    font-size: max(16px, 3vw);
     margin-right: -3px;
 }
 .blueStar{
@@ -366,17 +354,22 @@ input:focus{
     color: var(--darkgray);
 }
 
-
+.showMore{
+    font-size: max(16px, 4.6vw);/*38px*/
+    padding: 37px 0 0 2px;
+    margin-bottom: 5px;
+    display: grid;
+    align-items: center;
+}
 /*----- main section 2 -----*/
 
 .mainSection2{
     width: 100%;
     margin-top: 6.8vw;
-    padding: 0 5.5vw;
-    /* background-color: rgba(255, 0, 0, 0.287); */
+    padding: 0 3vw;
 }
 .mainSection2 > h2{
-    font-size: 6vw;
+    font-size: max(24px, 5.6vw);/*31px*/
     letter-spacing: -0.3px;
 }
 
@@ -392,42 +385,41 @@ input:focus{
 
 
 .bigCardBoxAct, 
-.smallCard1, 
-.smallCard2, 
-.doubleCardBoxAct2{
+.smallCard{
     width: 100%;
-    border-radius: 40px;
+    height: max(15px, 40vw);
+    border-radius: max(20px, 5vw);
+    margin-bottom: 3vw;
     overflow: hidden;
+    display: block;
+    box-shadow: var(--shadow); 
 }
 
-.bigCardBoxAct > a > .imgBoxAct,
-.smallCard1 > a >.imgBoxAct,
-.smallCard2 > a >.imgBoxAct{
+.imgBoxAct{
     width: 100%;
-    height: 274px;/*274px*/
-    overflow: hidden;
+    height: 100%;
+    position: relative;
 }
-.actImg{
+.imgBoxAct > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.bigCardBoxAct, 
-.smallCard1, 
-.smallCard2 {
-    box-shadow: var(--shadow);    
-}
 .nomActivite{
+    width: 100%;
     font-size: max(16px, 4.4vw);/*35px*/
     font-weight: 700;
+    background-color: white;
     padding: max(16px, 4.6vw) 0  max(12px, 4.6vw) 35px;/*40px*/
     letter-spacing: -1.5px;
+    position: absolute;
+    bottom: 0;
 }
 .doubleCardBoxAct1,
 .doubleCardBoxAct2{
     width: 100%;
 }
-.bigCardBoxAct, .smallCard1, .smallCard2{
+.bigCardBoxAct, .smallCard{
     margin-bottom: 48px;
 }
 

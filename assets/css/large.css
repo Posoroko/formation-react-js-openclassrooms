@@ -56,9 +56,8 @@ header > nav > ul > li{
     padding: 0 3.5vw
 }
 .searchBox{
-    height: max(48px, 3.54vw);/*68px*/
-    /* width: max(400px, 29.1vw);560px */
-    border-radius: 20px;
+    height: max(48px, 3.25vw);/*68px*/
+    border-radius: 25px;
     margin-top: max(40px, 1.95vw);
     background-color: var(--gray);
     overflow: hidden;
@@ -69,8 +68,8 @@ header > nav > ul > li{
 }
 .searchBox > i{
     height: 100%;
-    width: 68px;
-    font-size: 22px;
+    width: 85px;
+    font-size: 28px;
     background-color: var(--gray);
     border: 1px solid var(--lightblue);
     display: grid;
@@ -78,8 +77,8 @@ header > nav > ul > li{
 }
 .searchBox > input{
     height: 100%;
-    width: 312px;
-    font-size: max(20px, 1.25vw);/*24px*/
+    width: 400px;
+    font-size: clamp(18px, 1.25vw, 30px);/*24px*/
     font-weight: 700;
     padding-left: 22px;
     border: 1px solid var(--gray);
@@ -89,15 +88,19 @@ header > nav > ul > li{
     border: 0;
 }
 .searchBox > button{
-    width: 180px;
     height: 100%;
     color: white;
-    font-size: max(20px, 1.25vw);/*24px*/
+    font-size: clamp(18px, 1.25vw, 30px);/*24px*/
     font-weight: 700;
+    
     border: 1px solid var(--strongblue);
     background-color: var(--strongblue);
     cursor: pointer;
 }
+.searchBox > button > span{
+    padding: 0 20px 0 20px;
+}
+
 .searchBox > button > i{
     display: none;
 }
@@ -118,7 +121,7 @@ header > nav > ul > li{
 }
 .filterBox > button{
     height: 67px;
-    font-size: max(16px, 1.30vw);/*25pw*/
+    font-size: clamp(16px, 1.30vw, 28px);/*25pw*/
     font-weight: 700;
     letter-spacing: 0.5px;
     padding-right: 30px;
@@ -180,54 +183,56 @@ header > nav > ul > li{
     letter-spacing: 0.2px;
     margin-left: 16px;
 }
+
+
+
+
+
 .mainSection1{
-    max-width: 100%;
-    padding: 0 3.5vw;
+    width: 100%;
+    min-height: 1100px;
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
 .HebergementBox{
-    max-width: 60.5vw;/*1160px*/
-    padding: 52px 40px;
-    border-radius: 28px;
     background-color: var(--gray);
-    /* display: inline-block; */
+    /* padding: 3vw 0; */
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
 }
 .HebergementBox > h2 {
-    font-size: max(24px, 1.60vw);/*31px*/
+    font-size: max(24px, 1.6vw);/*31px*/
+    padding: 60px 0 45px 3vw;
     letter-spacing: -0.5px;
-    margin: 0 0 0px 0px;
 }
 .hotelCardBox1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    margin-top: 26px;
 }
 
 
 .hotelCard1{
-    height: 266px;
-    width: 329px;
+    height: 350px;
     background-color: rgb(255, 255, 255);
-    border-radius: var(--outerRadius25);
-    margin: 0 10px 40px 10px;
+    padding: 8px;
+    border-radius:25px;
+    margin-bottom: 60px;
+    overflow: hidden;
     box-shadow: var(--shadow);
+}
 
-}
-.hotelCard1 > a, .hotelCard2 > a {
-    height: 100%;
-    width: 100%;
-    display: block;
-    padding: 7px;
-}
 
 .hotelImgBox1{
-    height: 152px;
-    border-top-left-radius: var(--innerRadius20);
-    border-top-right-radius: var(--innerRadius20);
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
     overflow: hidden;
+    position: relative;
 }
 .hotelImgBox1 > img{
     width: 100%;
@@ -235,19 +240,28 @@ header > nav > ul > li{
     object-fit: cover;
 }
 .hotelInfoBox1 {
+    width: 100%;
+    background-color: white;
     padding: 15px;
+    position: absolute;
+    bottom: 0;
+}
+.hotelInfoBox1 > h3{
+    font-size: max(24px, 1vw);/*31px*/
+    /* margin-top: 6px; */
 }
 .hotelInfoBox1 > p{
-    font-size: 19.5px;
+    font-size: max(16px, 1vw);
     margin-top: 6px;
 }
 
-.HebergementBox > div > a{
-    font-size: 25.5px;
-    padding: 11px 0 0 7px;
-    margin-bottom: 5px;
-    display: grid;
-    align-items: center;
+.showMore{
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 11px 0 60px 3vw;
+    display: block;
+
 }
 .starBox{
     padding-left: 15px;
@@ -261,52 +275,74 @@ header > nav > ul > li{
 .grayStar{
     color: var(--darkgray);
 }
-
+@media (min-width: 1700px){
+    .HebergementBox{
+        max-width: 62vw;/*1160px*/
+        height: 100%;
+    }
+    .populaireBox{
+        width: 28vw;
+    }
+    .hotelCard1{
+        width: 16.666vw;
+    }
+}
+@media (max-width: 1700px){
+    .HebergementBox{
+        width: 93vw;
+        height: 100%;
+    }
+    .populaireBox{
+        width: 93vw;
+        height: 100%;
+        margin-bottom: 3vw;
+    }
+    .hotelCard1{
+        width: 25vw;
+    }
+}
 
 
 .populaireBox{
     background-color: var(--gray);
-    margin-left: max(25px, 2.8vw);/*55px*/
-    padding: 55px 52px 30px 47px;
+    padding: 0 3vw 0 3vw;
     border-radius: 25px;
     align-self: flex-start;
 }
-.populaireBox > hgroup{
+.populaireBox > .popTitleBox{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-.populaireBox > hgroup > h2{
-    font-size: max(24px, 1.6vw);/*31px*/
+.populaireBox > .popTitleBox > h2{
+    padding: 60px 0 45px 0;
+    font-size: max(24px, 1.5vw);/*31px*/
     letter-spacing: -1px;
-    margin-bottom: max(24px, 1.67vw);/*32px*/
 }
 .fa-chart-line{
     font-size: 25px;
 }
 .hotelCard2{
-    background-color: rgb(255, 255, 255);
-    border-radius: var(--outerRadius25);
-    margin: 0 0 max(21px, 2.2vw) 0;/*bottom: 42px*/
-    box-shadow: var(--shadow);
-}
-
-.hotelCard2 > a {
-    height: 100%;
+    height: 250px;
     width: 100%;
-    display: block;
+    background-color: rgb(255, 255, 255);
     padding: 7px;
+    border-radius: var(--outerRadius25);
+    margin-bottom: 60px;
+    box-shadow: var(--shadow);
     display: flex;
 }
+
 .hotelImgBox2{
-    width: 172px;
-    height: 176px;
-    border-top-left-radius: var(--innerRadius20);
-    border-bottom-left-radius: var(--innerRadius20);
-    overflow: hidden;
-}
-.hotelImgBox2 > img {
     width: 100%;
+    height: 100%;
+    border-radius: var(--innerRadius20);    
+    overflow: hidden;
+    display: flex;
+}
+
+.hotelImgBox2 > img {
+    width: 40%;
     height: 100%;
     object-fit: cover;
 }
@@ -321,26 +357,28 @@ header > nav > ul > li{
     flex-direction: column;
 }
 .hotelInfoBox2 > div > h3{
-    font-size: 21px;
+    font-size: 25px;
     letter-spacing: 0.3px;
 }
 .hotelInfoBox2 > div > p{
-    font-size: 19.5px;
+    font-size: 22px;
     margin-top: 10px;
 }
 .starBox2{
     padding: 10px 0px;
 }
 
+/* ----- activités -----*/
+
 
 .mainSection2{
     width: 100%;
     margin-top: 86px;
-    padding: 0 1.6vw;
+    /* padding: 0 3.5vw; */
     margin-bottom: 80px;
 }
 .mainSection2 > h2{
-    font-size: 27.5px;
+    font-size: max(24px, 1.6vw);/*31px*/
     letter-spacing: 0.75px;
     padding-left: 2vw;
 }
@@ -351,134 +389,82 @@ header > nav > ul > li{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-
-
-
-.bigCardBoxAct{
-    width: 400px;
-    height: 592px;
-    border-radius: 25px;
+.bigCardBoxAct,
+.smallCard{
+    border-radius: 30px;
     overflow: hidden;
     box-shadow: var(--shadow);
 }
-.actLink{
-    width: 100%;
-    height: 100%;
-    display: block;
+.bigCardBoxAct,
+.doubleCardBoxAct{
+    width: 20.625vw;
+    height: 750px;
+    margin-bottom: 80px;
 }
-.bigCardBoxAct > a > .imgBoxAct{
-    height: 520px;
-}
-.bigCardBoxAct > a > .imgBoxAct > img{
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
-
-.bigCardBoxAct, .doubleCardBoxAct1, .doubleCardBoxAct2{
-    margin: 30px;
+@media (max-width: 1700px){
+    .bigCardBoxAct,
+    .doubleCardBoxAct{
+        width: 44.75vw;
+    }
 }
 
-.doubleCardBoxAct1{
-    width: 400px;
-    height: 589px;/*313*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: var(--shadow);
-}
-.doubleCardBoxAct1 > .smallCard1{
+.imgBoxAct{
     width: 100%;
-    height: 315px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-.doubleCardBoxAct1 > .smallCard1 > a > .imgBoxAct{
-    width: 100%;
-    height: 245px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-.doubleCardBoxAct1 > .smallCard1 > a > .imgBoxAct > img{
-    width: 100%;
-    transform: translateY(-24%);
+    height: 100%;
+    position: relative;
 }
 .nomActivite{
-    font-size: 22px;
+    width: 100%;
+    font-size: 28px;
     font-weight: 700;
-    padding: 20px 0 0 25px;
-    letter-spacing: -0.5px;
+    background-color: white;
+    padding: 30px 0 30px 30px;
+    position: absolute;
+    bottom: 0;
+
 }
-.doubleCardBoxAct1 > .smallCard2{
+.imgBoxAct > img{
     width: 100%;
-    height: 220px;
-    border-radius: 25px;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+}
+.smallCard{
+    width: 100%;
+    border-radius: 30px;
     box-shadow: var(--shadow);
 }
-.doubleCardBoxAct1 > .smallCard2 > a > .imgBoxAct{
-    width: 100%;
-    height: 150px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+.smallCard1{
+    height: 380px;
 }
-.doubleCardBoxAct1 > .smallCard2 > a > .imgBoxAct > img{
-    width: 100%;
-    transform: translateY(-10%);
+.smallCard2{
+    height: 300px;
+}
+.smallCard3{
+    height: 325px;
+}
+.smallCard4{
+    height: 355px
 }
 
-.doubleCardBoxAct2{
-    width: 400px;
-    height: 589px;/*313*/
+.doubleCardBoxAct{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.doubleCardBoxAct2 > .smallCard1{
-    width: 100%;
-    height: 260px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-.doubleCardBoxAct2 > .smallCard1 > a > .imgBoxAct{
-    width: 100%;
-    height: 190px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-.doubleCardBoxAct2 > .smallCard1 > a > .imgBoxAct > img{
-    width: 100%;
-}
-.nomActivite{
-    font-size: 22px;
-    padding: 25px 0 0 25px;
-}
-.doubleCardBoxAct2 > .smallCard2{
-    width: 100%;
-    height: 278px;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-.doubleCardBoxAct2 > .smallCard2 > a > .imgBoxAct{
-    width: 100%;
-    height: 210px;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-.doubleCardBoxAct2 > .smallCard2 > a > .imgBoxAct > img{
-    width: 100%;
-    transform: translateY(-3%);
-}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*----- footer -----*/
 
 
 footer{
