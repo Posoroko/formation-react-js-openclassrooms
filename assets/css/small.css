@@ -57,12 +57,12 @@ input:focus{
 .topSection{
     margin: 0 5.5vw
 }
-.mainHgroup > h1 {
+.topTitleBox > h1 {
     font-size: max(18px, 5.85vw); /*29.4px*/
     letter-spacing: -0.3px;
     padding-top: 37px;
 }
-.mainHgroup > p{
+.topTitleBox > p{
     font-size: max(14px, 4vw);/*22.3px*/
     letter-spacing: 1px;
     /* line-height: 3px;  */
@@ -108,7 +108,7 @@ input:focus{
     border: 0;
     cursor: pointer;
 }
-.searchBox > button > p {
+.searchBox > button > span {
     display: none;
 }
 .searchBox > button > i{
