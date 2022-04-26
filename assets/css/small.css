@@ -4,19 +4,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: rgba(255, 0, 0, 0.342); */
 }
 .logo{
     height: max(60px, 12vw);
 }
-
 header > nav{
     width: 100%;
     margin-top: 50px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    
 }
 header > nav > ul{
     width: 100%;
@@ -24,8 +20,6 @@ header > nav > ul{
 }
 header > nav > ul > li{
     width: 50%;
-    
-    
 }
 input:focus{
     outline: none;
@@ -52,7 +46,6 @@ input:focus{
 
 
 
-
 /*----- TOP SECTION -----*/
 .topSection{
     margin: 0 5.5vw
@@ -65,9 +58,7 @@ input:focus{
 .topTitleBox > p{
     font-size: max(14px, 4vw);/*22.3px*/
     letter-spacing: 1px;
-    /* line-height: 3px;  */
 }
-
 .searchBox{
     height: max(48px, 13.5vw);/*68px*/
     border: 1px solid var(--gray);
@@ -77,7 +68,6 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     opacity: 1;
 }
 .searchBox > i{
@@ -121,8 +111,6 @@ input:focus{
     display: grid;
     place-items: center;
 }
-
-
 .filterBox{
     margin: max(20px, 9vw) 0 28px 0;/*margin-top: 40px*/
     display: flex;
@@ -161,11 +149,12 @@ input:focus{
     transition: all 500ms ease;
 }
 
+
+
 /*----- filter hover transition -----*/
 
 .filterBox > button:hover{
     color: var(--blue);
-    /* background-color: var(--gray); */
     box-shadow: var(--shadow);
 }
 .filterBox > button:hover > i{
@@ -173,13 +162,9 @@ input:focus{
     background-color: var(--blue);
 }
 
-
-
 .infoBox{
     margin: 37px 0 0 0;
     display: flex;
-
-    
 }
 .infoBox > i{
     height: 48px;
@@ -196,8 +181,8 @@ input:focus{
     letter-spacing: -0.5px;
     padding: 6px 0 0 5px;
     margin: 0 0 72px 16px;
-
 }
+
 
 
 /*----- main section 1 -----*/
@@ -209,8 +194,9 @@ input:focus{
     flex-wrap: wrap-reverse;
 }
 
-/*----- populaires ----- */
 
+
+/*----- populaires ----- */
 .populaireBox{
     width: 100%;
     background-color: var(--gray);
@@ -231,7 +217,7 @@ input:focus{
 }
 .hotelCard2{
     width: 100%;
-    height: 275px;/*275 */
+    height: 200px;/*275 */
     background-color: rgb(255, 255, 255);
     padding: max(5px, 1.5vw);
     border-radius: max(20px, 5vw);
@@ -239,7 +225,6 @@ input:focus{
     box-shadow: var(--shadow);
     display: block;
 }
-
 .hotelImgBox2{
     width: 100%;
     height: 100%;
@@ -248,13 +233,11 @@ input:focus{
     display: flex;
     position: relative;
 }
-
 .hotelImgBox2 > img{
     width: 40%;
     height: 100%;
     object-fit: cover;
 }
-
 .hotelInfoBox2 {
     height: 100%;
     width: 60%;
@@ -266,7 +249,6 @@ input:focus{
     position: absolute;
     right: 0;
 }
-
 .hotelInfoBox2 > div > h3{
     font-size: max(16px, 4.4vw);/*35px*/
     letter-spacing: -1px;
@@ -278,6 +260,9 @@ input:focus{
 .starBox2{
     padding-bottom: 12px;
 }
+
+
+
 /*----- hébergement -----*/
 
 .HebergementBox{
@@ -296,17 +281,15 @@ input:focus{
     flex-wrap: wrap;
     margin-top: 41px;
 }
-
 .hotelCard1{
     width: 100%;
-    height: 300px;
+    height: 250px;
     padding: 7px;
     background-color: rgba(255, 255, 255);
     border-radius: max(20px, 5vw);
     margin: 0px 0px 26px 0px;
     box-shadow: var(--shadow);
 }
-
 .hotelImgBox1{
     width: 100%;
     height: 100%;
@@ -338,7 +321,6 @@ input:focus{
     margin-top: 8px;
     letter-spacing: 0.7px;
 }
-
 .starBox{
     display: block;
     padding: 11px 0 11px 0;
@@ -361,8 +343,10 @@ input:focus{
     display: grid;
     align-items: center;
 }
-/*----- main section 2 -----*/
 
+
+
+/*----- main section 2 -----*/
 .mainSection2{
     width: 100%;
     margin-top: 6.8vw;
@@ -372,7 +356,6 @@ input:focus{
     font-size: max(24px, 5.6vw);/*31px*/
     letter-spacing: -0.3px;
 }
-
 .cardOuterBoxAct{
     width: 100%;
     margin-top: 56px;
@@ -380,21 +363,16 @@ input:focus{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-
-
-
 .bigCardBoxAct, 
 .smallCard{
     width: 100%;
-    height: max(15px, 40vw);
+    height: max(15px, 55vw);
     border-radius: max(20px, 5vw);
     margin-bottom: 3vw;
     overflow: hidden;
     display: block;
     box-shadow: var(--shadow); 
 }
-
 .imgBoxAct{
     width: 100%;
     height: 100%;

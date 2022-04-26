@@ -151,17 +151,12 @@ header > nav > ul > li{
 
 .filterBox > button:hover{
     color: var(--blue);
-    /* background-color: var(--gray); */
     box-shadow: var(--shadow);
 }
 .filterBox > button:hover > i{
     color: var(--lightblue);
     background-color: var(--blue);
 }
-
-
-
-
 .infoBox{
     display: flex;
     align-items: center;
@@ -186,19 +181,16 @@ header > nav > ul > li{
 
 
 
-
-
+/*----- main section -----*/
 .mainSection1{
     width: 100%;
-    min-height: 1100px;
-    margin-top: 50px;
+    min-height: 950px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
 }
 .HebergementBox{
     background-color: var(--gray);
-    /* padding: 3vw 0; */
     border-radius: 28px;
     display: flex;
     flex-direction: column;
@@ -213,24 +205,20 @@ header > nav > ul > li{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-
 .hotelCard1{
-    height: 350px;
+    height: 278px;
     background-color: rgb(255, 255, 255);
-    padding: 8px;
-    border-radius:25px;
+    padding: 6px;
+    border-radius:24px;
     margin-bottom: 60px;
     overflow: hidden;
     box-shadow: var(--shadow);
 }
-
-
 .hotelImgBox1{
     width: 100%;
     height: 100%;
-    border-top-right-radius: 22px;
-    border-top-left-radius: 22px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -247,7 +235,7 @@ header > nav > ul > li{
     bottom: 0;
 }
 .hotelInfoBox1 > h3{
-    font-size: max(24px, 1vw);/*31px*/
+    font-size: max(18px, 0.5vw);/*31px*/
     /* margin-top: 6px; */
 }
 .hotelInfoBox1 > p{
@@ -257,15 +245,14 @@ header > nav > ul > li{
 
 .showMore{
     width: 100%;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     padding: 11px 0 60px 3vw;
     display: block;
-
 }
 
 .fa-star{
-    font-size: 21px;
+    font-size: 16px;
     margin-right: -3px;
 }
 .blueStar{
@@ -322,7 +309,7 @@ header > nav > ul > li{
     font-size: 25px;
 }
 .hotelCard2{
-    height: 250px;
+    height: 200px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 7px;
@@ -356,11 +343,11 @@ header > nav > ul > li{
     flex-direction: column;
 }
 .hotelInfoBox2 > div > h3{
-    font-size: 25px;
+    font-size: 18px;
     letter-spacing: 0.3px;
 }
 .hotelInfoBox2 > div > p{
-    font-size: 22px;
+    font-size: 16px;
     margin-top: 10px;
 }
 .starBox2{
@@ -414,7 +401,7 @@ header > nav > ul > li{
 }
 .nomActivite{
     width: 100%;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 700;
     background-color: white;
     padding: 30px 0 30px 30px;
@@ -482,11 +469,11 @@ footer > nav > ul{
     width: 33.33%;
 }
 .navTitle{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 .navItem{
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
